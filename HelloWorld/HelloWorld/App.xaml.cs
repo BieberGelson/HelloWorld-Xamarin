@@ -13,7 +13,7 @@ namespace HelloWorld
 		{
 			InitializeComponent();
 
-			MainPage = new HelloWorld.AbsoluteLayout.AbsoluteLayoutEx3();
+			MainPage = new HelloWorld.Relative_Layout.RelativeLayoutEx1();
             
 		}
 

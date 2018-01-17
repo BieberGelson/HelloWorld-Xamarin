@@ -15,7 +15,7 @@ namespace HelloWorld
 		public AbsoluteLayoutCodeBehind ()
 		{
 			InitializeComponent ();
-            var layout = new AbsoluteLayout();
+            var layout = new Xamarin.Forms.AbsoluteLayout();
             Content = layout;
             var AquaBoxView = new BoxView { BackgroundColor = Color.Aqua };
             layout.Children.Add(AquaBoxView, new Rectangle(0, 0, 1, 1), AbsoluteLayoutFlags.All);

@@ -20,6 +20,14 @@
       <DependentUpon>AbsoluteLayoutCodeBehind.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)AbsoluteLayout\AbsoluteLayoutEx1.xaml.cs">
+      <DependentUpon>AbsoluteLayoutEx1.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)AbsoluteLayout\AbsoluteLayoutEx3.xaml.cs">
+      <DependentUpon>AbsoluteLayoutEx3.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -118,7 +126,18 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Grid\" />
-    <Folder Include="$(MSBuildThisFileDirectory)AbsoluteLayout\" />
     <Folder Include="$(MSBuildThisFileDirectory)Stack\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AbsoluteLayout\AbsoluteLayoutEx1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AbsoluteLayout\AbsoluteLayoutEx3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

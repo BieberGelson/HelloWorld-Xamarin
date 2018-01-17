@@ -12,10 +12,22 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AbsoluteLayout\AbsoluteLayout.xaml.cs">
+      <DependentUpon>AbsoluteLayout.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)AbsoluteLayout\AbsoluteLayoutCodeBehind.xaml.cs">
+      <DependentUpon>AbsoluteLayoutCodeBehind.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)ExercicioStacklayoutxaml.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Stack\ExercicioStackLayout2.xaml.cs">
+      <DependentUpon>ExercicioStackLayout2.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Stack\ExercicioStacklayoutxaml.xaml.cs">
       <DependentUpon>ExercicioStacklayoutxaml.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -23,7 +35,23 @@
       <DependentUpon>GreetPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)StackPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Grid\GridExercicio1.xaml.cs">
+      <DependentUpon>GridExercicio1.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Grid\GridExercicio2.xaml.cs">
+      <DependentUpon>GridExercicio2.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Grid\GridPage.xaml.cs">
+      <DependentUpon>GridPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Grid\GridPageCodeBehind.xaml.cs">
+      <DependentUpon>GridPageCodeBehind.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Stack\StackPage.xaml.cs">
       <DependentUpon>StackPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -35,15 +63,62 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)StackPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Stack\StackPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ExercicioStacklayoutxaml.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Stack\ExercicioStacklayoutxaml.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Stack\ExercicioStackLayout2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Grid\GridPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Grid\GridPageCodeBehind.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Grid\GridExercicio1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Grid\GridExercicio2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AbsoluteLayout\AbsoluteLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AbsoluteLayout\AbsoluteLayoutCodeBehind.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Grid\" />
+    <Folder Include="$(MSBuildThisFileDirectory)AbsoluteLayout\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Stack\" />
   </ItemGroup>
 </Project>

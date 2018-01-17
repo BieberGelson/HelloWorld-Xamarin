@@ -13,7 +13,8 @@ namespace HelloWorld
 		{
 			InitializeComponent();
 
-			MainPage = new HelloWorld.ExercicioStacklayoutxaml();
+			MainPage = new HelloWorld.AbsoluteLayoutCodeBehind();
+            
 		}
 
 		protected override void OnStart ()
